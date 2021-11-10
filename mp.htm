@@ -1,0 +1,1066 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>嘉義縣圖書館</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- slick css-->
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
+    <!-- wow css -->
+    <link rel="stylesheet" type="text/css" href="vendor/animate.css" />
+    <!--pignose-->
+    <link rel="stylesheet" href="vendor/pg_calendar/css/pignose.calendar.min.css">
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/hyui.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+</head>
+
+<body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按Enter到主內容區</a>
+    <!-- wrapper Start -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <header class="header">
+            <div class="container">
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="網站標題" tabindex="2">:::</a>
+                <!-- navigation Start -->
+                <nav class="navigation" role="navigation" aria-label="Site">
+                    <!-- 新增div navlist -->
+                    <div class="navlist">
+                        <ul>
+                            <li><a href="#">網站導覽</a></li>
+                            <li><a href="#">文化觀光局首頁</a></li>
+                            <li><a href="#">兒童版</a></li>
+                            <li><a href="#">常見問題</a></li>
+                        </ul>
+                    </div>
+                    <!-- 讀者專區 樣式一 -->
+                    <!-- 未登入狀態的登入btn -->
+                    <div class="nav_reader">
+                        <button class="reader_btn-1">
+                            <p>讀者登入</p>
+                        </button>
+                        <!-- 已登入狀態顯示讀者姓名 -->
+                        <button class="reader_btn-2" style="display:none;">
+                            <p>張家祥</p>
+                        </button>
+                    </div>
+                </nav>
+                <!--未登入狀態區塊-->
+                <div class="nav_readerArea-1" style="display: none;">
+                    <button type="button" class="close">關閉</button>
+                    <div class="form_grp">
+                        <label for="username">帳號：</label>
+                        <input name="username" type="text" placeholder="請輸入帳號">
+                    </div>
+                    <div class="form_grp">
+                        <label for="password">密碼：</label>
+                        <input name="password" type="password" placeholder="請輸入密碼">
+                    </div>
+                    <div class="check_grp">
+                        <label><input type="checkbox">記住帳號</label>
+                    </div>
+                    <div class="btn_grp">
+                        <button type="button" class="loginout">登入</button>
+                    </div>
+                </div>
+                <!--讀者已登入狀態區塊-->
+                <div class="nav_readerArea-2" style="display:none;">
+                    <button type="button" class="close">關閉</button>
+                    <div class="reader_infolist">
+                        <p>歡迎，<span class="reader_name">張家祥</span></p>
+                        <ul>
+                            <li>借閱中<span>10</span></li>
+                            <li class="important">逾期未歸<span>1</span></li>
+                            <li class="important">違規天數<span>1</span></li>
+                            <li>預約<span>5</span></li>
+                            <li class="important">已到館<span>2</span></li>
+                        </ul>
+                    </div>
+                    <div class="btn_grp">
+                        <button class="my_study">個人書房</button>
+                        <button class="loginout">登出</button>
+                    </div>
+                </div>
+                <!-- navigation End -->
+                <h1>
+                    <a href="index.htm"><img src="images/logo.png" alt="網站標題" /></a>
+                </h1>
+                <!-- Search Start -->
+                <!-- 館藏查詢 樣式一 -->
+                <div class="search" role="search">
+                    <div class="form_grp">
+                        <label for="mustSameAsId">搜尋</label>
+                        <input name="username" id="mustSameAsId" type="text" placeholder="請輸入文字" accesskey="S"
+                            title="請輸入文字" aria-label="搜尋網站內容">
+                        <button type="button" class="btn btn-search">查詢</button>
+                    </div>
+
+                </div>
+                <!-- Search End -->
+                <!-- noscript -->
+                <noscript> 您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+
+                    (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←)
+                    快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結 <a href="#">網站導覽</a>
+                </noscript>
+                <!-- menu Start -->
+                <nav class="menu" role="navigation" aria-label="About page">
+                    <ul>
+                        <li><a href="#">關於圖書館</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://www.google.com">館藏查詢</a></li>
+                        <li><a href="http://www.google.com">訊息公告</a>
+                            <ul>
+                                <li><a href="http://www.google.com">第二層有連結</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">讀者服務</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="http://www.google.com">第二層有連結</a>
+                                    <ul>
+                                        <li><a href="http://www.google.com">第三層選單有下層</a>
+                                            <ul>
+                                                <li><a href="#">第四層選單</a></li>
+                                                <li><a href="#">第四層選單</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="http://www.google.com">第三層選單有連結</a></li>
+                                        <li><a href="#">第三層選單</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">數位資源</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">主題活動</a>
+                            <ul>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                                <li><a href="#">第二層選單</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- menu End -->
+            </div>
+        </header>
+        <!-- header End -->
+        <!-- main Start -->
+        <div id="center" class="main mp">
+            <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+            <!-- slider -->
+            <section class="col-12 full hero_image">
+                <div class="container">
+                    <div class="mpSlider">
+                        <div class="img-container">
+                            <a href="#" title="">
+                                <picture>
+                                    <source media="(min-width: 1200px)" data-lazy-srcset="images/img/banner_01.jpg">
+                                    </source>
+                                    <source media="(min-width: 992px)" data-lazy-srcset="images/img/banner_01.jpg">
+                                    </source>
+                                    <source media="(min-width: 576px)" data-lazy-srcset="images/img/banner_01.jpg">
+                                    </source>
+                                    <source media="(max-width: 575px)" data-lazy-srcset="images/img/banner_01.jpg">
+                                    </source>
+                                    <img data-lazy="images/img/banner_01.jpg" alt="banner1" class="cover">
+                                    <noscript><img src="images/img/banner_01.jpg"></noscript>
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="img-container">
+                            <a href="#" title="">
+                                <picture>
+                                    <source media="(min-width: 1200px)" data-lazy-srcset="images/demo/01.jpg">
+                                    </source>
+                                    <source media="(min-width: 992px)" data-lazy-srcset="images/demo/01.jpg">
+                                    </source>
+                                    <source media="(min-width: 576px)" data-lazy-srcset="images/demo/01.jpg">
+                                    </source>
+                                    <source media="(max-width: 575px)" data-lazy-srcset="images/demo/01.jpg">
+                                    </source>
+                                    <img data-lazy="images/demo/01.jpg" alt="banner3" class="cover">
+                                    <noscript><img src="images/demo/01.jpg"></noscript>
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="img-container">
+                            <a href="#" title="">
+                                <picture>
+                                    <source media="(min-width: 1200px)" data-lazy-srcset="images/demo/02.jpg">
+                                    </source>
+                                    <source media="(min-width: 992px)" data-lazy-srcset="images/demo/02.jpg">
+                                    </source>
+                                    <source media="(min-width: 576px)" data-lazy-srcset="images/demo/02.jpg">
+                                    </source>
+                                    <source media="(max-width: 575px)" data-lazy-srcset="images/demo/02.jpg">
+                                    </source>
+                                    <img data-lazy="images/demo/02.jpg" alt="banner3" class="cover">
+                                    <noscript><img src="images/demo/02.jpg"></noscript>
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="news_bg">
+                <section class="flex-8-4">
+                    <div class="animate_g">
+                        <div class="book_animate_l"></div>
+                        <div class="book_animate_r_1"></div>
+                        <div class="book_animate_r_2"></div>
+                        <div class="book_animate_r_3"></div>
+                    </div>
+                    <div class="container">
+                        <div class="Flex-set">
+                            <!-- 最新消息 -->
+                            <div class="col latest_news wow fadeIn" data-wow-delay=".5s">
+                                <h2 class="text-left">訊息專區</h2>
+                                <!-- 地方圖書館 選擇館別 -->
+                                <div class="form_grp form_inline select_library">
+                                    <label for="selectSample">選擇館別：</label>
+                                    <select name="" id="selectSample">
+                                        <option value="" disabled selected>館別選擇</option>
+                                        <option value="">全部</option>
+                                        <option value="">XX區</option>
+                                        <option value="">OO區</option>
+                                    </select>
+                                </div>
+                                <div class="tabSet">
+                                    <section class="tabs example-1">
+                                        <button class="tabItem active">全部</button>
+                                        <!--選到的頁籤項目-->
+                                        <div class="tabContent">
+                                            <ul>
+                                                <li><span class="township_tag">嘉義圖書館</span><time>2019-09-26</time><a
+                                                        href="#">中秋節及國慶日休館公告：108/9/13(五)及10/10(四)休館</a></li>
+                                                <li><span class="township_tag">嘉義圖書館</span><time>2019-09-26</time><a
+                                                        href="#">科學探索玩一夏，開始招生囉!!!</a></li>
+                                                <li><span class="township_tag">嘉義圖書館</span><time>2019-09-25</time><a
+                                                        href="#">歡度父親節~ 讓爸爸們"爸氣登場"</a></li>
+                                                <li><span class="township_tag">嘉義圖書館</span><time>2019-09-24</time><a
+                                                        href="#">與書為友●夏學營 開始報名囉!!!!!</a></li>
+                                                <li><span class="township_tag">嘉義圖書館</span><time>2019-09-23</time><a
+                                                        href="#">適逢端午連假，本週六親子說故事活動暫停一次!適逢端午連假，本週六親子說故事活動暫停一次!</a></li>
+                                            </ul>
+                                            <div class="more"><a href="#">更多訊息公告</a></div>
+                                        </div>
+                                        <button class="tabItem">公告</button>
+                                        <div class="tabContent">
+                                            <ul>
+                                                <li><span class="township_tag">總館</span><time>2019-09-26</time><a
+                                                        href="#">2第一則消息</a></li>
+                                                <li><span class="township_tag">湖口</span><time>2019-09-26</time><a
+                                                        href="#">第二則消息</a></li>
+                                                <li><span class="township_tag">竹東</span><time>2019-09-25</time><a
+                                                        href="#">第三則消息</a></li>
+                                                <li><span class="township_tag">關西</span><time>2019-09-24</time><a
+                                                        href="#">第四則消息</a></li>
+                                                <li><span class="township_tag">寶山</span><time>2019-09-23</time><a
+                                                        href="#">第五則消息</a></li>
+                                            </ul>
+                                            <div class="more"><a href="#">更多訊息公告</a></div>
+                                        </div>
+                                        <button class="tabItem">開館異動</button>
+                                        <div class="tabContent">
+                                            <ul>
+                                                <li><span class="township_tag">總館</span><time>2019-09-26</time><a
+                                                        href="#">3第一則消息</a></li>
+                                                <li><span class="township_tag">湖口</span><time>2019-09-26</time><a
+                                                        href="#">第二則消息</a></li>
+                                                <li><span class="township_tag">竹東</span><time>2019-09-25</time><a
+                                                        href="#">第三則消息</a></li>
+                                                <li><span class="township_tag">關西</span><time>2019-09-24</time><a
+                                                        href="#">第四則消息</a></li>
+                                                <li><span class="township_tag">寶山</span><time>2019-09-23</time><a
+                                                        href="#">第五則消息</a></li>
+                                            </ul>
+                                            <div class="more"><a href="#">更多訊息公告</a></div>
+                                        </div>
+                                        <button class="tabItem">藝文活動</button>
+                                        <div class="tabContent">
+                                            <ul>
+                                                <li><span class="township_tag">總館</span><time>2019-09-26</time><a
+                                                        href="#">4第一則消息</a></li>
+                                                <li><span class="township_tag">湖口</span><time>2019-09-26</time><a
+                                                        href="#">第二則消息</a></li>
+                                                <li><span class="township_tag">竹東</span><time>2019-09-25</time><a
+                                                        href="#">第三則消息</a></li>
+                                                <li><span class="township_tag">關西</span><time>2019-09-24</time><a
+                                                        href="#">第四則消息</a></li>
+                                                <li><span class="township_tag">寶山</span><time>2019-09-23</time><a
+                                                        href="#">第五則消息</a></li>
+                                            </ul>
+                                            <div class="more"><a href="#">更多訊息公告</a></div>
+                                        </div>
+                                        <button class="tabItem">其他</button>
+                                        <div class="tabContent">
+                                            <ul>
+                                                <li><span class="township_tag">總館</span><time>2019-09-26</time><a
+                                                        href="#">4第一則消息</a></li>
+                                                <li><span class="township_tag">湖口</span><time>2019-09-26</time><a
+                                                        href="#">第二則消息</a></li>
+                                                <li><span class="township_tag">竹東</span><time>2019-09-25</time><a
+                                                        href="#">第三則消息</a></li>
+                                                <li><span class="township_tag">關西</span><time>2019-09-24</time><a
+                                                        href="#">第四則消息</a></li>
+                                                <li><span class="township_tag">寶山</span><time>2019-09-23</time><a
+                                                        href="#">第五則消息</a></li>
+                                            </ul>
+                                            <div class="more"><a href="#">更多訊息公告</a></div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                            <div class="col reader_service wow fadeIn" data-wow-delay=".8s">
+                                <h2 class="text-left">讀者服務</h2>
+                                <div class="service_list">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pic service_icon_search">
+                                                </div>
+                                                <span>館藏查詢</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <div class="pic service_icon_fb">
+
+                                                </div>
+                                                <span>FB粉絲團</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#">
+                                                <div class="pic service_icon_info">
+
+                                                </div>
+                                                <span>電子資源</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pic service_icon_reader">
+
+                                                </div>
+                                                <span>讀者意見</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pic service_icon_q">
+
+                                                </div>
+                                                <span>常見問題</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="pic service_icon_online">
+                                                </div>
+                                                <span>線上申辦</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="flex-5-7 activity_section wow fadeInUp">
+                    <div class="container">
+                        <h2 class="text-left">近期活動</h2>
+                        <!-- 地方圖書館 選擇館別 -->
+                        <div class="form_grp form_inline select_library">
+                            <label for="selectSample">選擇館別：</label>
+                            <select name="" id="selectSample">
+                                <option value="" disabled selected>館別選擇</option>
+                                <option value="">全部</option>
+                                <option value="">XX區</option>
+                                <option value="">OO區</option>
+                            </select>
+                        </div>
+                        <!-- 近期活動 樣式二 -->
+                        <div class="Flex-set">
+                            <div class="col activityContent">
+                                <div class="activitySlider">
+                                    <div class="book_wrap">
+                                        <a href="#">
+                                            <div class="img-container">
+                                                <img src="images/demo/demo_01.png" alt="圖片說明">
+                                                <span class="caption">
+                                                    <span class="caption_title">
+                                                        <span class="name">嘉義縣圖書館</span>
+                                                        <time class="time">2021/04/18</time>
+                                                    </span>
+                                                    <span
+                                                        class="caption_name">110年度生活講座110年度生活講座110年度生活講座110年度生活講座</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="book_wrap">
+                                        <a href="#">
+                                            <div class="img-container">
+                                                <img src="images/demo/02.jpg" alt="圖片說明">
+                                                <span class="caption">
+                                                    <span class="caption_title">
+                                                        <span class="name">嘉義縣圖書館</span>
+                                                        <time class="time">2021/04/18</time>
+                                                    </span>
+                                                    <span
+                                                        class="caption_name">110年度生活講座110年度生活講座110年度生活講座110年度生活講座</span>
+                                                </span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col activitiesBlock">
+                                <div class="">
+                                    <div class="activitiesList">
+                                        <ul class="Content">
+                                            <li><span class="township_tag">嘉義圖書館</span><time>2019-09-26</time><a
+                                                    href="#">中秋節及國慶日休館公告：108/9/13(五)及10/10(四)休館</a></li>
+                                            <li><span class="township_tag">嘉義圖書館</span><time>2019-09-26</time><a
+                                                    href="#">科學探索玩一夏，開始招生囉!!!</a></li>
+                                            <li><span class="township_tag">嘉義圖書館</span><time>2019-09-25</time><a
+                                                    href="#">歡度父親節~ 讓爸爸們"爸氣登場"</a></li>
+                                            <li><span class="township_tag">嘉義圖書館</span><time>2019-09-24</time><a
+                                                    href="#">與書為友●夏學營 開始報名囉!!!!!</a></li>
+                                            <li><span class="township_tag">嘉義圖書館</span><time>2019-09-23</time><a
+                                                    href="#">適逢端午連假，本週六親子說故事活動暫停一次!適逢端午連假，本週六親子說故事活動暫停一次!</a></li>
+                                        </ul>
+                                        <div class="more"><a href="#">更多近期活動</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+            <section class="new_book_section">
+                <div class="container newbook_container">
+                    <h2>新書展示</h2>
+                    <div class="">
+                        <div class="bookSlider newBook  wow fadeInUp" ">
+                            <div class=" book_wrap">
+                            <a href="#">
+                                <div class="img-container">
+                                    <picture>
+                                        <source media="(min-width: 1200px)" data-lazy-srcset="images/book_05.jpg">
+                                        </source>
+                                        <source media="(min-width: 992px)" data-lazy-srcset="images/book_05.jpg">
+                                        </source>
+                                        <source media="(min-width: 576px)" data-lazy-srcset="images/book_05.jpg">
+                                        </source>
+                                        <source media="(max-width: 575px)" data-lazy-srcset="images/book_05.jpg">
+                                        </source>
+                                        <img data-lazy="images/book_05.jpg" alt="book5" class="cover">
+                                        <noscript><img src="images/book_05.jpg"></noscript>
+                                    </picture>
+
+                                </div>
+                                <div class="book_name">1</div>
+                            </a>
+                        </div>
+                        <div class="book_wrap">
+                            <a href="#">
+                                <div class="img-container">
+                                    <img src="images/book_06.jpg">
+                                </div>
+                                <div class="book_name">神來的時候</div>
+                            </a>
+                        </div>
+                        <div class="book_wrap">
+                            <a href="#">
+                                <div class="img-container">
+                                    <img src="images/book_07.jpg">
+                                </div>
+                                <div class="book_name">搶救大灰鯨--看因紐特人如何幫動物朋友脫困</div>
+                            </a>
+                        </div>
+                        <div class="book_wrap">
+                            <a href="#">
+                                <div class="img-container">
+                                    <img src="images/book_08.jpg">
+                                </div>
+                                <div class="book_name">高手的養成--股市新手必須知道的3個祕密</div>
+                            </a>
+                        </div>
+                        <div class="book_wrap">
+                            <a href="#">
+                                <div class="img-container">
+                                    <img src="images/book_01.jpg">
+                                </div>
+                                <div class="book_name">10個月從五十音直接通過日檢1級 :裘莉的日語神器</div>
+                            </a>
+                        </div>
+                        <div class="book_wrap">
+                            <a href="#">
+                                <div class="img-container">
+                                    <picture>
+                                        <img src="images/book_02.jpg">
+                                </div>
+                                <div class="book_name">10層樓的樟樹公寓</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--bookslider End-->
+                    <div class="more">
+                        <a href="#">更多好書</a>
+                    </div>
+                </div>
+        </div>
+        <div class="container goodbook_container">
+            <h2>熱門排行榜</h2>
+            <div class="tabSet">
+                <section class="tabs bookSlider_tabs">
+                    <a href="#" class="tabItem active">借閱</a>
+                    <!--選到的頁籤項目-->
+                    <div class="tabContent">
+                        <div class="bookSlider wow fadeInUp" data-wow-delay=".3s">
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book_05.jpg">
+                                    </div>
+                                    <div class="book_name">1</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book_06.jpg">
+                                    </div>
+                                    <div class="book_name">神來的時候</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book_07.jpg">
+                                    </div>
+                                    <div class="book_name">搶救大灰鯨--看因紐特人如何幫動物朋友脫困</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book_08.jpg">
+                                    </div>
+                                    <div class="book_name">高手的養成--股市新手必須知道的3個祕密</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book_01.jpg">
+                                    </div>
+                                    <div class="book_name">10個月從五十音直接通過日檢1級 :裘莉的日語神器</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <picture>
+                                            <img src="images/book_02.jpg">
+                                    </div>
+                                    <div class="book_name">10層樓的樟樹公寓</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--bookslider End-->
+                        <div class="more">
+                            <a href="#">更多好書看板</a>
+                        </div>
+                    </div>
+                    <!--tabContent END-->
+                    <a href="#" class="tabItem ">預約</a>
+                    <div class="tabContent">
+                        <div class="bookSlider">
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book1.png">
+                                    </div>
+                                    <div class="book_name">2</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book1.png">
+                                    </div>
+                                    <div class="book_name">神來的時候</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book3.png">
+                                    </div>
+                                    <div class="book_name">搶救大灰鯨--看因紐特人如何幫動物朋友脫困</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book4.png">
+                                    </div>
+                                    <div class="book_name">高手的養成--股市新手必須知道的3個祕密</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book5.png">
+                                    </div>
+                                    <div class="book_name">10個月從五十音直接通過日檢1級 :裘莉的日語神器</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book6.png">
+                                    </div>
+                                    <div class="book_name">10層樓的樟樹公寓</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--bookslider End-->
+                        <div class="more">
+                            <a href="#">更多好書看板</a>
+                        </div>
+                    </div>
+                    <!--tabContent END-->
+                    <a href="#" class="tabItem ">點閱</a>
+                    <div class="tabContent">
+                        <div class="bookSlider">
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book1.png">
+                                    </div>
+                                    <div class="book_name">3</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book1.png">
+                                    </div>
+                                    <div class="book_name">神來的時候</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book3.png">
+                                    </div>
+                                    <div class="book_name">搶救大灰鯨--看因紐特人如何幫動物朋友脫困</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book4.png">
+                                    </div>
+                                    <div class="book_name">高手的養成--股市新手必須知道的3個祕密</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book5.png">
+                                    </div>
+                                    <div class="book_name">10個月從五十音直接通過日檢1級 :裘莉的日語神器</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book6.png">
+                                    </div>
+                                    <div class="book_name">10層樓的樟樹公寓</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--bookslider End-->
+                        <div class="more">
+                            <a href="#">更多好書看板</a>
+                        </div>
+                    </div>
+                    <a href="#" class="tabItem comment">評論</a>
+                    <div class="tabContent">
+                        <div class="bookSlider">
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book1.png">
+                                    </div>
+                                    <div class="book_name">3</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book1.png">
+                                    </div>
+                                    <div class="book_name">神來的時候</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book3.png">
+                                    </div>
+                                    <div class="book_name">搶救大灰鯨--看因紐特人如何幫動物朋友脫困</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book4.png">
+                                    </div>
+                                    <div class="book_name">高手的養成--股市新手必須知道的3個祕密</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book5.png">
+                                    </div>
+                                    <div class="book_name">10個月從五十音直接通過日檢1級 :裘莉的日語神器</div>
+                                </a>
+                            </div>
+                            <div class="book_wrap">
+                                <a href="#">
+                                    <div class="img-container">
+                                        <img src="images/book6.png">
+                                    </div>
+                                    <div class="book_name">10層樓的樟樹公寓</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!--bookslider End-->
+                        <div class="more">
+                            <a href="#">更多好書看板</a>
+                        </div>
+                    </div>
+                    <!--tabContent END-->
+                </section>
+            </div>
+        </div>
+        </section>
+
+        <section class="category_search">
+            <div class="container wow fadeIn" data-wow-delay=".5s">
+                <h2>各館資訊</h2>
+                <div class="btn_grp">
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                    <a class="btn">新港鄉立圖書館</a>
+                </div>
+            </div>
+        </section>
+        <section class="flex-8-4 open_info">
+            <div class="container">
+                <div class="Flex-set">
+                    <!-- 圖書館資訊 -->
+                    <div class="col library_info  wow fadeInLeft">
+                        <ul>
+                            <li>
+                                <h2>嘉義縣圖書館</h2>
+                            </li>
+                            <li>
+                                <p>地址：嘉義縣朴子市山通路7號 服務專線：(05)3799978</p>
+                            </li>
+                            <li>
+                                <b>開放時間</b>
+                                <p>
+                                    <span>
+                                        週二至週五
+                                    </span>
+                                    <span>
+                                        09:00~21:00
+                                    </span>
+                                </p>
+                                <p>
+                                    <span>
+                                        週日
+                                    </span>
+                                    <span>
+                                        09:00~21:00
+                                    </span>
+                                </p>
+                            </li>
+                            <li>
+                                <b>休館日</b>
+                                <p>逢週一、含國定假日(元旦、228紀念日、婦幼節、國慶日) 及選舉日</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- 行事曆區塊 -->
+                    <div class="col calendarBlock  wow fadeInRight">
+                        <div class="calendar">
+                        </div>
+                        <div class="remark">
+                            <ul>
+                                <li class="close-day">休館日</li>
+                                <li class="act-day">活動日</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="col-12 library_info_map">
+            <div class="full map">
+                <div class="container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.826886532418!2d120.24784105081213!3d23.466708105395682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e9c0a6007a6f1%3A0x6515792fe0f5080f!2z5ZiJ576p57ij56uL5ZyW5pu46aSo!5e0!3m2!1szh-TW!2stw!4v1635401414163!5m2!1szh-TW!2stw"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <!-- fatfooter Start -->
+    <section class="fatfooter">
+        <div class="container">
+            <button type="button" name="展開選單/OPEN" aria-label="導覽選單展開/收合" class="btn btn-fatfooter">收合</button>
+            <nav>
+                <ul>
+                    <li><a href="#">圖書館公告</a>
+                        <ul>
+                            <li><a href="#">公告</a></li>
+                            <li><a href="#">活動訊息</a></li>
+                            <li><a href="#">活動花絮</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">館舍簡介</a>
+                        <ul>
+                            <li><a href="#">緣起沿革</a></li>
+                            <li><a href="#">組織業務</a></li>
+                            <li><a href="#">本館大事紀</a></li>
+                            <li><a href="#">業務統計</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">參觀導覽</a>
+                        <ul>
+                            <li><a href="#">開館時間</a></li>
+                            <li><a href="#">聯絡資訊</a></li>
+                            <li><a href="#">場地設施</a></li>
+                            <li><a href="#">平面位置圖</a></li>
+                            <li><a href="#">鄉鎮圖書館簡介</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">線上服務</a>
+                        <ul>
+                            <li><a href="#">服務介紹</a></li>
+                            <li><a href="#">閱覽須知</a></li>
+                            <li><a href="#">常見問答</a></li>
+                            <li><a href="#">學生志工申請</a></li>
+                            <li><a href="#">表單下載</a></li>
+                            <li><a href="#">聯絡我們</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">故事志工</a>
+                        <ul>
+                            <li><a href="#">最新消息</a></li>
+                            <li><a href="#">本隊介紹</a></li>
+                            <li><a href="#">組織章程</a></li>
+                            <li><a href="#">歷屆幹部</a></li>
+                            <li><a href="#">活動花絮</a></li>
+                            <li><a href="#">表單下載</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">最新消息</a>
+                        <ul>
+                            <li><a href="#">越越讀書日</a></li>
+                            <li><a href="#">閱讀研習班</a></li>
+                            <li><a href="#">好書教換日</a></li>
+                            <li><a href="#">多元閱讀推廣活動</a></li>
+                            <li><a href="#">鄉鎮圖書館活動</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href="#">電子資源</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- fatfooter End -->
+    <!-- footer Start-->
+    <footer>
+        <div class="container">
+            <a class="accesskey" href="#aZ" id="aZ" accesskey="Z" title="下方功能區塊">:::</a>
+            <section>
+                <div class="container">
+                    <div class="adSlider">
+                        <div class="img-container">
+                            <a href="#" title="">
+                                <img data-lazy="images/demo/ad_01.jpg" class="contain" alt="圖片說明1">
+                            </a>
+                        </div>
+                        <div class="img-container">
+                            <a href="#" title="">
+                                <img data-lazy="images/demo/ad_02.jpg" class="contain" alt="圖片說明2">
+                            </a>
+                        </div>
+                        <div class="img-container">
+                            <a href="#" title="">
+                                <img data-lazy="images/demo/ad_03.jpg" class="contain" alt="圖片說明3">
+                            </a>
+                        </div>
+                        <div class="img-container">
+                            <a href="#" title="">
+                                <img data-lazy="images/demo/ad_04.jpg" class="contain" alt="圖片說明4">
+                            </a>
+                        </div>
+                        <div class="img-container">
+                            <a href="#" title="">
+                                <img data-lazy="images/demo/ad_05.jpg" class="contain" alt="圖片說明5">
+                            </a>
+                        </div>
+                        <div class="img-container">
+                            <a href="#" title="">
+                                <img data-lazy="images/demo/ad_06.jpg" class="contain" alt="圖片說明6">
+                            </a>
+                        </div>
+                        <div class="img-container">
+                            <a href="#" title="">
+                                <img data-lazy="images/demo/ad_07.jpg" class="cover" alt="圖片說明7">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="footer_info">
+                <div class="footer_logo">
+                </div>
+                <p class="Copyright">
+                    <b>嘉義縣圖書館</b><br>
+                    地址 | 61351 嘉義縣朴子市山通路7號 <br>
+                    電話 | (05)3799978 <br>
+                    <span class="counter">今日瀏覽人次 | 11,205 本月瀏覽人次 | 310,654累計瀏覽人次 | 2,679,905 </span>
+                    <span class="update">更新日期 | <em>2021/01/01</em></span> <br>
+                    建議瀏覽器 | IE10.0以上、Firefox、Chrome(螢幕設定最佳顯示效果為1280*1024)
+                </p>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="footer_bottom">
+                <ul class="footer_link">
+                    <li><a href="javascript:;">隱私權政策</a></li>
+                    <li><a href="javascript:;">資訊安全政策宣告 </a></li>
+                    <li><a href="javascript:;">著作權聲明</a></li>
+                </ul>
+                <p class="copyright">
+                    嘉義縣圖書館 版權所有 ©2021 All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer End -->
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <!-- JQ -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- 外掛 plugin js -->
+    <script src="vendor/jquery.easing.min.js"></script><!-- ease -->
+    <script src="vendor/slick/slick.min.js "></script><!-- slick -->
+    <script src="vendor/slick/slick-lightbox.js "></script><!-- slick lightbox -->
+    <script src="vendor/lazyload/lazyload.js"></script><!-- lazyload -->
+    <script src="vendor/picturefill/picturefill.min.js" async></script><!-- picturefill -->
+    <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
+    <!-- pg_calendar -->
+    <script src="vendor/pg_calendar/js/pignose.calendar.full.js"></script>
+    <!-- WOW -->
+    <script src="vendor/wow/wow.min.js"></script>
+    <!-- anime -->
+    <script src="vendor/anime/anime.js"></script>
+    <!-- hyUI -->
+    <script src="js/hyui.js"></script>
+    <!-- 客製js -->
+    <script src="js/customize.js"></script>
+    <script src="js/anime_set.js"></script>
+    <script src="js/wow_set.js"></script>
+    <script>
+        $(function () {
+            $('.calendar').pignoseCalendar({
+                lang: 'ch',
+                disabledDates: [
+                    '2021-08-02',
+                    '2021-08-09',
+                    '2021-08-16',
+                    '2021-08-23',
+                    '2021-08-30'
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>

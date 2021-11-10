@@ -1,0 +1,392 @@
+.ch_mp .menu {
+    display: none;
+}
+.ch_mp_bg{
+    background-color: #E6E7B7;
+}
+
+.ch_mp.wrapper{
+    @include screen('mobile') {
+        background-color:unset;
+    }
+   
+}
+.ch_mp {
+    position: relative;
+  
+    
+    .header {
+        border-bottom: 4px solid $grassColor;
+
+        .container .sidebarCtrl span {
+            background: #333;
+        }
+    }
+
+    .nav_reader {
+        top: 5em;
+
+        button {
+            width: 66px;
+            height: 180px;
+            background-color: $grassColor;
+            border-radius: 10px 0 0 10px;
+
+            &:hover,
+            &:active {
+                background-color: lighten($grassColor, 12%);
+            }
+
+            @include screen('mobile') {
+                background: #fff url(../images/img/icon_user-settings.svg) no-repeat center;
+                height: 60px;
+                width: 60px;
+                border-radius: 0;
+                position: fixed;
+                right: 0;
+                top: 0;
+
+                &:hover,
+                &:active {
+                    background: #fff url(../images/img/icon_user-settings.svg) no-repeat center;
+                    height: 60px;
+                    width: 60px;
+                    border-radius: 0;
+                    position: fixed;
+                    right: 0;
+                    top: 0;
+                }
+            }
+        }
+
+        .reader_btn-1 img {
+            width: 48px;
+            height: 100px;
+
+            @include screen('mobile') {
+                display: none;
+            }
+        }
+
+        .reader_btn-2 p {
+            margin: 0 auto;
+            font-size: 1.2em;
+            color: darken($secondaryColor, 10%);
+        }
+
+    }
+
+    .nav_readerArea-1,
+    .nav_readerArea-2 {
+        right: 80px;
+        top: 100px;
+
+        @include screen('mobile') {
+            right: auto;
+            top: 63px;
+        }
+    }
+}
+
+.main {
+    padding-bottom: 8em;
+    background-image: unset;
+
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: -20px;
+        left: 60px;
+        width: 100%;
+        height: 426px;
+        background: url(../images/img/train.svg) center no-repeat;
+
+        @media screen and (max-width: 1200px) {
+            left: 0px;
+            background-size: contain;
+        }
+
+        @include screen('mobile') {
+            height: 500px;
+            background: url(../images/img/m_train.svg) right no-repeat;
+        }
+
+        @include screen('xs_mobile') {
+            bottom: -80px;
+        }
+    }
+
+}
+
+.ch_mp .center_block {
+    background: url(../images/img/blackboard.svg) center no-repeat;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    background-size: contain;
+    margin: 0 1em;
+    margin-top: 5em;
+
+    @include screen('tablet') {
+        margin-top: 3em;
+    }
+
+    @include screen('mobile') {
+        margin-top: 5em;
+        height: 860px;
+        background: url(../images/img/m_blackboard.svg) center no-repeat;
+    }
+
+    @include screen('xs_mobile') {
+        background-size: contain;
+        height: 700px;
+
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 266px;
+        height: 416px;
+        background: url(../images/img/globe_pic.svg) center no-repeat;
+        bottom: -130px;
+        left: -160px;
+        z-index: -1;
+
+        @include screen('tablet') {
+            display: none;
+        }
+    }
+}
+
+.ch_mp .child_info {
+    width: 100%;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+        padding: 0;
+
+        li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            width: 198px;
+
+        }
+
+        @include screen('tablet') {
+            margin-top: 15%;
+            transform: scale(0.9);
+
+        }
+
+        @include screen('mobile') {
+            flex-wrap: wrap;
+            margin: 15% 10%;
+
+            li {
+                width: 50%;
+            }
+
+        }
+
+        @include screen('xs_mobile') {
+            margin: 10%;
+        }
+    }
+
+    .searchBook {
+        flex-wrap: wrap;
+
+        i {
+            width: 100%;
+            height: 131px;
+            background: url(../images/img/icon_search.svg) no-repeat center;
+
+        }
+
+        .text {
+            width: 100%;
+            height: 50px;
+            background: url(../images/img/findbook_text.svg) no-repeat center;
+
+        }
+
+        &:hover,
+        &:active {
+            i {
+                background: url(../images/img/icon_search_g.svg) no-repeat center;
+            }
+
+            .text {
+                background: url(../images/img/findbook_text_g.svg) no-repeat center;
+            }
+        }
+
+
+    }
+
+
+    .news {
+        flex-wrap: wrap;
+
+        i {
+            width: 100%;
+            height: 131px;
+            background: url(../images/img/icon_news.svg) no-repeat center;
+
+        }
+
+        .text {
+            width: 100%;
+            height: 50px;
+            background: url(../images/img/news_text.svg) no-repeat center;
+        }
+
+        &:hover,
+        &:active {
+            i {
+                background: url(../images/img/icon_news_g.svg) no-repeat center;
+            }
+
+            .text {
+                background: url(../images/img/news_text_g.svg) no-repeat center;
+            }
+        }
+    }
+
+    .qa {
+        flex-wrap: wrap;
+
+        i {
+            width: 100%;
+            height: 131px;
+            background: url(../images/img/icon_QA.svg) no-repeat center;
+
+        }
+
+        .text {
+            width: 100%;
+            height: 50px;
+            background: url(../images/img/QandA_text.svg) no-repeat center;
+        }
+
+        &:hover,
+        &:active {
+            i {
+                background: url(../images/img/icon_QA_g.svg) no-repeat center;
+            }
+
+            .text {
+                background: url(../images/img/QandA_text_g.svg) no-repeat center;
+            }
+        }
+
+    }
+
+
+    .library {
+        flex-wrap: wrap;
+
+        i {
+            width: 100%;
+            height: 131px;
+            background: url(../images/img/icon_library.svg) no-repeat center;
+
+        }
+
+        .text {
+            width: 100%;
+            height: 50px;
+            background: url(../images/img/library_text.svg) no-repeat center;
+        }
+
+        &:hover,
+        &.active {
+            i {
+                background: url(../images/img/icon_library_g.svg) no-repeat center;
+            }
+
+            .text {
+                background: url(../images/img/library_text_g.svg) no-repeat center;
+            }
+        }
+    }
+
+    // &::after {
+    //     position: absolute;
+    //     content: '';
+    //     width: 266px;
+    //     height: 416px;
+    //     background: url(../images/img/globe_pic.svg) center no-repeat;
+    //     bottom: -130px;
+    //     left: -150px;
+    //     // z-index: -1;
+
+    //     @include screen('tablet') {
+    //         display: none;
+    //     }
+    // }
+
+}
+
+.ch_mp #center {
+    padding-top: 0 !important;
+}
+
+
+.ch_mp footer .container:nth-child(2) {
+    background: $grassColor;
+    max-width: unset;
+}
+
+.ch_mp {
+    footer {
+        background-color: #F6F6F6;
+
+    }
+
+    .footer_info {
+        padding: 3em 20px;
+
+        @media screen and (max-width: 840px) {
+            justify-content: center;
+            padding: 2em 20px;
+
+            .footer_logo {
+                margin: 0;
+            }
+
+            .Copyright {
+                text-align: center;
+            }
+        }
+
+    }
+
+    footer .container .footer_bottom {
+        background: $grassColor;
+        border-top: 0px;
+        color: #000;
+
+        .footer_link {
+            a {
+                color: #000;
+            }
+
+            li {
+                border-right: 1px solid #000;
+            }
+
+        }
+
+        .copyright {
+            color: #000;
+        }
+    }
+}

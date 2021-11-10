@@ -1,0 +1,244 @@
+.tabSet {
+    max-width: 100%;
+    margin: 1em auto;
+    overflow: hidden;
+    @extend %clearfix;
+
+    @include screen('mobile') {
+        width: auto;
+        height: auto !important;
+    }
+}
+
+.tabs {
+    position: relative;
+
+    // 原來h2
+    // &>.tabItem {
+    //     &.active>a {
+    //         background-color: $primaryColor;
+    //         color: #FFF;
+    //     }
+    //     float: left;
+    //     margin: 0;
+    //     padding: 0;
+    //     font-size:1em;
+    //     line-height: 1;
+    //     @include screen('mobile') {
+    //         float: none;
+    //         &>a {
+    //             width: 100% !important;
+    //             border-bottom: 1px solid #888;
+    //         }
+    //         &.active>a {
+    //             border-color: #bbb;
+    //         }
+    //     }
+    //     &>a {
+    //         display: block;
+    //         padding: 16px 0 14px;
+    //         text-align: center;
+    //         background-color: #aaa;
+    //         color: #fff;
+    //         font-weight: bold;
+    //         text-decoration: none;
+    //         @include text-overflow;
+    //         box-sizing: border-box;
+    //         &:hover {
+    //             background: $primaryColor;
+    //         }
+    //     }
+    // }
+    // 改button
+    &>.tabItem {
+        &.active {
+            background-color: $primaryColor;
+            color: #FFF;
+        }
+
+        float: left;
+        margin: 0;
+        padding: 0;
+        font-size:1em;
+        line-height: 1;
+        display: block;
+        padding: 16px 0 14px;
+        text-align: center;
+        background-color: #aaa;
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        @include text-overflow;
+        box-sizing: border-box;
+
+        &:hover,
+        &:focus {
+            background: $primaryColor;
+        }
+
+        @include screen('mobile') {
+            float: none;
+            width: 100% !important;
+            border-bottom: 1px solid #888;
+
+            &.active {
+                border-color: #bbb;
+            }
+        }
+    }
+}
+
+//多組 可設定差異
+.example-2 {
+    .tabItem:hover {
+        background: $secondaryColor;
+    }
+
+    .tabItem.active {
+        background: $secondaryColor;
+    }
+}
+
+// 顯示content
+.active+.tabContent {
+    display: block;
+}
+
+.tabContent {
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+    clear: both;
+    padding: 30px 15px;
+    display: none;
+
+    @include screen('mobile') {
+        position: static;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    ul {
+        @include li-reset;
+    }
+
+    li {
+        margin: 0 0 1.3em 0;
+        padding: 0;
+        line-height: 1.6;
+        border-bottom: 1px #CCC dashed;
+
+        @include screen('mobile') {
+            @include text-overflow();
+        }
+
+        a {
+            @include aSetting_nocolor;
+        }
+
+        time {
+            display: inline-block;
+            margin: 0 1em;
+            font-size: .813em;
+            color: #666;
+        }
+    }
+}
+
+//============
+// 專案新增設定
+//============
+.tabs>.tabItem {
+    background-color: #EFEBE6;
+    border: 1px solid #EFEBE6;
+    color: #000;
+    font-weight: 400;
+
+    &:hover {
+        color: #FFF;
+        border: 1px solid $primaryColor;
+    }
+    @include screen('mobile') {
+        border: 1px solid  darken($infoColor, 5%)
+    }
+
+}
+
+.tabContent {
+    ul {
+        margin-top: 1em;
+
+        li {
+            .township_tag{
+                font-weight: 500;
+            }
+            // padding: 0 0.5em 0.9em;
+            // line-height: 1.6em;
+            line-height: 1em;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            padding-bottom: 1.3em;
+            border-bottom: 1px solid #ccc;
+            &:last-child{
+                border:none ;
+            }
+            time {
+                margin: 0 2em;
+            }
+        }
+    }
+
+
+}
+
+.more {
+    justify-content: center !important;
+}
+
+.more a {
+    background: $primaryColor;
+    color: #fff;
+    padding: 0.5em 1.5em;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px #ccc;
+
+    &::after {
+        background: none !important;
+    }
+
+    &:hover {
+        background-color: darken($primaryColor, 20%);
+    }
+}
+
+.tabs>.tabItem.active {
+    border: 1px solid $primaryColor;
+}
+
+.bookSlider_tabs.tabs{
+    
+    .tabItem {
+        position: relative !important;
+        padding:15px 2em;
+        &:first-child{
+            margin-left: calc( 100%/2 - 192px) !important;
+            border-radius: 4px 0 0 4px ;
+            @include screen('mobile'){
+                margin-left: 0 !important;
+            }
+        }
+        @include screen('mobile'){
+            border-radius:4px;
+        }
+       
+    } 
+    .tabItem.comment{
+        border-radius: 0 4px 4px 0;
+    }
+    .tabContent{
+        top:80px !important;
+        
+    }
+}

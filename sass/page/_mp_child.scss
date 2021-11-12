@@ -173,9 +173,28 @@
         li {
             list-style: none;
             display: flex;
-            align-items: center;
+            align-items: flex-end;
             cursor: pointer;
+            justify-content: center;
             width: 198px;
+            i {
+                height: 120px;
+                margin-bottom: 1em;
+                display: flex;
+                align-items: center;
+            }
+            .img_hover{
+                display: none;
+            }
+            &:hover,&:active{
+                i img{
+                    display: none;
+                }
+                        
+            .img_hover{
+                display: block;
+            }
+            }
 
         }
 
@@ -203,12 +222,7 @@
     .searchBook {
         flex-wrap: wrap;
 
-        i {
-            width: 100%;
-            height: 131px;
-            background: url(../images/img/icon_search.svg) no-repeat center;
 
-        }
 
         .text {
             width: 100%;
@@ -219,9 +233,7 @@
 
         &:hover,
         &:active {
-            i {
-                background: url(../images/img/icon_search_g.svg) no-repeat center;
-            }
+   
 
             .text {
                 background: url(../images/img/findbook_text_g.svg) no-repeat center;
@@ -235,13 +247,6 @@
     .news {
         flex-wrap: wrap;
 
-        i {
-            width: 100%;
-            height: 131px;
-            background: url(../images/img/icon_news.svg) no-repeat center;
-
-        }
-
         .text {
             width: 100%;
             height: 50px;
@@ -250,9 +255,9 @@
 
         &:hover,
         &:active {
-            i {
-                background: url(../images/img/icon_news_g.svg) no-repeat center;
-            }
+            // i {
+            //     background: url(../images/img/icon_news_g.svg) no-repeat center;
+            // }
 
             .text {
                 background: url(../images/img/news_text_g.svg) no-repeat center;
@@ -263,12 +268,7 @@
     .qa {
         flex-wrap: wrap;
 
-        i {
-            width: 100%;
-            height: 131px;
-            background: url(../images/img/icon_QA.svg) no-repeat center;
 
-        }
 
         .text {
             width: 100%;
@@ -278,9 +278,9 @@
 
         &:hover,
         &:active {
-            i {
-                background: url(../images/img/icon_QA_g.svg) no-repeat center;
-            }
+            // i {
+            //     background: url(../images/img/icon_QA_g.svg) no-repeat center;
+            // }
 
             .text {
                 background: url(../images/img/QandA_text_g.svg) no-repeat center;
@@ -292,14 +292,6 @@
 
     .library {
         flex-wrap: wrap;
-
-        i {
-            width: 100%;
-            height: 131px;
-            background: url(../images/img/icon_library.svg) no-repeat center;
-
-        }
-
         .text {
             width: 100%;
             height: 50px;
@@ -308,9 +300,6 @@
 
         &:hover,
         &.active {
-            i {
-                background: url(../images/img/icon_library_g.svg) no-repeat center;
-            }
 
             .text {
                 background: url(../images/img/library_text_g.svg) no-repeat center;
@@ -318,20 +307,7 @@
         }
     }
 
-    // &::after {
-    //     position: absolute;
-    //     content: '';
-    //     width: 266px;
-    //     height: 416px;
-    //     background: url(../images/img/globe_pic.svg) center no-repeat;
-    //     bottom: -130px;
-    //     left: -150px;
-    //     // z-index: -1;
 
-    //     @include screen('tablet') {
-    //         display: none;
-    //     }
-    // }
 
 }
 

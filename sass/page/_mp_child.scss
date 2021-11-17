@@ -109,10 +109,14 @@
         @include screen('mobile') {
             height: 500px;
             background: url(../images/img/m_train.svg) right no-repeat;
+            background-size: contain;
         }
 
         @include screen('xs_mobile') {
             bottom: -80px;
+        }
+        @media screen and(max-width:428px) {
+            bottom: -160px;
         }
     }
 
@@ -144,6 +148,11 @@
         height: 700px;
 
     }
+    @media screen and(max-width:428px) {
+     margin-top: 1em;
+     height:700px ;  
+     background-size: cover;     
+    }
 
     &::after {
         position: absolute;
@@ -170,7 +179,7 @@
         margin-top: 10%;
         padding: 0;
 
-        li {
+        a li {
             list-style: none;
             display: flex;
             align-items: flex-end;
@@ -215,8 +224,26 @@
         }
 
         @include screen('xs_mobile') {
-            margin: 10%;
+            margin: 15% 0%;
+            transform: scale(0.8);
         }
+
+        @media screen and(max-width:428px) {
+            transform: scale(0.65);
+            margin-top: -5em;
+            a{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+            li{
+                width: 100%;
+            }
+             li i{
+                height: 100px;
+            }
+        }
+
     }
 
     .searchBook {
